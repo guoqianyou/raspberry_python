@@ -4,7 +4,7 @@ from os import path
 
 import sys
 
-from my_network import my_socket_server
+from mynetwork import my_socket_server
 from myloger import GetSysLoger
 
 
@@ -13,6 +13,7 @@ def run_main():
     logger.info("开始启动。。。。")
     logger.info("启动socket_server服务。。")
     my_socket_server.run_socket_server()
+
 
 
 if __name__ == '__main__':

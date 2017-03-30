@@ -40,7 +40,7 @@ class MySocketServere(BaseRequestHandler):
 
 
 # 启动
-def run_socket_server(port=88899):
+def run_socket_server(port=8899):
     server = socketserver.ThreadingTCPServer(("0.0.0.0", port), MySocketServere)
     server.serve_forever()
 
